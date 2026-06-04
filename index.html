@@ -3,17 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Happy Aprilazio | Gameplay Programmer</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Happy Aprilazio Kiperanza | Gameplay Programmer</title>
+  <meta name="description" content="Portfolio of Happy Aprilazio Kiperanza, Gameplay Programmer, QA Engineer, and Unreal Engine Developer." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="header">
-    <nav class="nav container">
-      <a href="#home" class="logo"><span>HA</span> Happy Aprilazio</a>
-      <button class="menu-btn" id="menuBtn">☰</button>
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="#home" class="brand" aria-label="Go to home">
+        <span class="brand-mark">HA</span>
+        <span>Happy Aprilazio</span>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open navigation menu">☰</button>
+
       <div class="nav-links" id="navLinks">
         <a href="#home">Home</a>
         <a href="#about">About</a>
@@ -21,114 +27,172 @@
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
-        <a href="assets/CV_Happy_Aprilazio.pdf" class="btn btn-small" download>Download CV</a>
+        <a class="nav-cv" href="assets/CV_Happy_Aprilazio.pdf" download>Download CV</a>
       </div>
     </nav>
   </header>
 
   <main>
-    <section id="home" class="hero section">
+    <section id="home" class="hero section-space">
       <div class="container hero-grid">
-        <div class="hero-content">
-          <p class="badge">&lt;/&gt; Gameplay Programmer</p>
-          <h1>Happy <span>Aprilazio</span></h1>
-          <h2>Gameplay Programmer specializing in Unreal Engine 4 with Blueprint & C++.</h2>
-          <p class="hero-text">I build gameplay systems, player mechanics, AI behavior, UI features, and polished game experiences for released and in-development games.</p>
-          <div class="socials">
-            <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn">in</a>
-            <a href="https://github.com/hepiapril021" target="_blank" aria-label="GitHub">GH</a>
-            <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube">YT</a>
-            <a href="mailto:happyaprilazio21@gmail.com" aria-label="Email">✉</a>
+        <div class="hero-content reveal">
+          <span class="eyebrow">&lt;/&gt; Gameplay Programmer</span>
+          <h1>Happy <span>Aprilazio</span> Kiperanza</h1>
+          <p class="hero-subtitle">Gameplay Programmer, QA Engineer, and Unreal Engine Developer.</p>
+          <p class="hero-text">Nearly 2 years of experience developing gameplay mechanics, NPC AI, UI systems, interactive features, and quality assurance workflows using Unreal Engine 4, Blueprint, C++, and C#.</p>
+
+          <div class="social-row" aria-label="Social links">
+            <a href="https://www.linkedin.com/in/happy-aprilazio-kiperanza-716439214/" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
+            <a href="https://github.com/hepiapril021" target="_blank" rel="noreferrer" aria-label="GitHub">GH</a>
+            <a href="mailto:hepiaprilazio@gmail.com" aria-label="Email">✉</a>
           </div>
+
           <div class="hero-actions">
-            <a href="#projects" class="btn">View My Projects →</a>
-            <a href="#contact" class="btn btn-outline">Contact Me</a>
+            <a class="btn primary" href="#projects">View My Projects →</a>
+            <a class="btn secondary" href="assets/CV_Happy_Aprilazio.pdf" download>Download CV</a>
           </div>
         </div>
 
-        <div class="profile-card">
-          <img src="assets/profile.jpg" alt="Happy Aprilazio profile photo">
-          <div class="status"><span></span> Available for work</div>
+        <div class="hero-image-card reveal delay-1">
+          <img src="assets/profile.jpg" alt="Portrait of Happy Aprilazio Kiperanza" />
+          <div class="status-badge"><span></span> Available for work</div>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section about">
+    <section id="about" class="section-space about-section">
       <div class="container about-grid">
-        <div>
+        <div class="reveal">
           <p class="section-label">About Me</p>
           <h2>Who I Am</h2>
-          <p>I'm a Gameplay Programmer with experience working on games using Unreal Engine 4. I focus on gameplay mechanics, Blueprint architecture, C++ implementation, AI behavior, UI systems, debugging, and feature integration.</p>
-          <p>I enjoy turning design ideas into playable systems that are easy to maintain, test, and expand by the team.</p>
+          <p>I am a Gameplay Programmer and QA Engineer experienced in building published Unreal Engine 4 projects. My focus is creating gameplay systems that are clean, maintainable, and enjoyable for players.</p>
+          <p>I have worked on NPC AI, checkpoint systems, inventory systems, interactive objects, UI programming, cinematic integration, bug tracking, regression testing, and gameplay feature integration across multiple levels and chapters.</p>
         </div>
-        <div class="info-list">
-          <div><strong>Name</strong><span>Happy Aprilazio</span></div>
-          <div><strong>Location</strong><span>Indonesia</span></div>
-          <div><strong>Email</strong><span>happyaprilazio21@gmail.com</span></div>
-          <div><strong>Focus</strong><span>Unreal Engine 4 • Blueprint • C++</span></div>
+
+        <div class="info-list reveal delay-1">
+          <div><span>Name</span><strong>Happy Aprilazio Kiperanza</strong></div>
+          <div><span>Location</span><strong>Indonesia</strong></div>
+          <div><span>Email</span><strong><a href="mailto:hepiaprilazio@gmail.com">hepiaprilazio@gmail.com</a></strong></div>
+          <div><span>Focus</span><strong>Unreal Engine 4 • Blueprint • C++</strong></div>
+          <div><span>Role</span><strong>Gameplay Programmer • QA Engineer</strong></div>
         </div>
       </div>
     </section>
 
-    <section id="skills" class="section">
+    <section id="skills" class="section-space">
       <div class="container">
         <p class="section-label">Skills</p>
-        <h2>My Technical Skills</h2>
-        <div class="skills-grid">
-          <div class="skill-card"><h3>Unreal Engine 4</h3><p>Blueprint / C++</p></div>
-          <div class="skill-card"><h3>Blueprint</h3><p>Gameplay Systems</p></div>
-          <div class="skill-card"><h3>C++</h3><p>Gameplay Programming</p></div>
-          <div class="skill-card"><h3>Wwise</h3><p>Audio Integration</p></div>
-          <div class="skill-card"><h3>GitHub</h3><p>Version Control</p></div>
-          <div class="skill-card"><h3>QA Testing</h3><p>Bug Reports / Regression</p></div>
+        <h2>Technical Skills</h2>
+
+        <div class="skill-groups">
+          <article class="skill-panel reveal">
+            <h3>Gameplay Programming</h3>
+            <div class="pill-grid">
+              <span>Gameplay Systems</span>
+              <span>NPC AI</span>
+              <span>Inventory Systems</span>
+              <span>Checkpoint Systems</span>
+              <span>Interactive Objects</span>
+              <span>UI Programming</span>
+              <span>Gameplay Mechanics</span>
+              <span>Level Flow Design</span>
+              <span>Cinematic Integration</span>
+            </div>
+          </article>
+
+          <article class="skill-panel reveal delay-1">
+            <h3>QA & Testing</h3>
+            <div class="pill-grid">
+              <span>Functional Testing</span>
+              <span>Regression Testing</span>
+              <span>Bug Tracking</span>
+              <span>Bug Reporting</span>
+              <span>Compatibility Testing</span>
+              <span>Feature Verification</span>
+            </div>
+          </article>
+
+          <article class="skill-panel reveal delay-2">
+            <h3>Tools & Engines</h3>
+            <div class="pill-grid">
+              <span>Unreal Engine 4</span>
+              <span>Unity</span>
+              <span>Construct</span>
+              <span>Blueprint</span>
+              <span>C++</span>
+              <span>C#</span>
+              <span>Wwise</span>
+              <span>GitHub</span>
+              <span>Perforce</span>
+              <span>Trello</span>
+              <span>Notion</span>
+              <span>Confluence</span>
+              <span>Figma</span>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="section projects">
+    <section id="projects" class="section-space projects-section">
       <div class="container">
         <div class="section-head">
           <div>
             <p class="section-label">Projects</p>
             <h2>Featured Projects</h2>
           </div>
+          <a class="btn secondary small" href="#contact">Contact Me</a>
         </div>
-        <div class="projects-grid">
-          <article class="project-card">
-            <div class="project-image placeholder">MICE CRISIS</div>
+
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <div class="project-cover mice">Mice Crisis</div>
             <div class="project-body">
+              <span class="project-role">Gameplay Programmer — Unreal Engine 4</span>
               <h3>Mice Crisis</h3>
-              <p class="role">Gameplay Programmer</p>
-              <p>Developed gameplay systems, player mechanics, UI features, NPC behavior, checkpoints, and feature integration using UE4 Blueprint & C++.</p>
-              <div class="project-links">
-                <a href="https://store.steampowered.com/" target="_blank">View on Steam</a>
-                <a href="https://www.youtube.com/" target="_blank">Gameplay Video</a>
+              <p>Developed gameplay systems including NPC AI, centralized checkpoint controller, door mechanics, bomb mechanics, settings menu UI, level transition systems, ragdoll, outline materials, and interactive object mechanics.</p>
+              <div class="project-actions">
+                <a href="https://store.steampowered.com/" target="_blank" rel="noreferrer">View on Steam</a>
+                <a href="https://www.youtube.com/" target="_blank" rel="noreferrer">Gameplay Video</a>
               </div>
             </div>
           </article>
 
-          <article class="project-card">
-            <div class="project-image placeholder chill">CHILL FOX</div>
+          <article class="project-card reveal delay-1">
+            <div class="project-cover chill">Chill Fox</div>
             <div class="project-body">
+              <span class="project-role">Gameplay Programmer — Unreal Engine 4</span>
               <h3>Chill Fox</h3>
-              <p class="role">Gameplay Programmer</p>
-              <p>Worked on gameplay systems, level mechanics, UI implementation, bug fixing, and optimization for PC platform.</p>
-              <div class="project-links">
-                <a href="https://store.steampowered.com/" target="_blank">View on Steam</a>
-                <a href="https://www.youtube.com/" target="_blank">Gameplay Video</a>
+              <p>Worked on NPC AI, object dragging, sneak attack mechanics, object throwing with explosion effects, HUD UI, cutscene integration, AI wandering, chase behavior, and gameplay animation integration.</p>
+              <div class="project-actions">
+                <a href="https://store.steampowered.com/" target="_blank" rel="noreferrer">View on Steam</a>
+                <a href="https://www.youtube.com/" target="_blank" rel="noreferrer">Gameplay Video</a>
               </div>
             </div>
           </article>
 
-          <article class="project-card">
-            <div class="project-image placeholder personal">PERSONAL PROJECT</div>
+          <article class="project-card reveal delay-2">
+            <div class="project-cover petit">Petit Island & Lily & Violet</div>
             <div class="project-body">
-              <h3>Personal Project</h3>
-              <p class="role">Indie Developer</p>
-              <p>A short game prototype built in Unreal Engine to experiment with mechanics, interaction systems, and gameplay ideas.</p>
-              <div class="project-links">
-                <a href="https://github.com/hepiapril021" target="_blank">View on GitHub</a>
-                <a href="https://www.youtube.com/" target="_blank">Gameplay Video</a>
+              <span class="project-role">QA Engineer & Gameplay Programmer</span>
+              <h3>Petit Island & Lily & Violet</h3>
+              <p>Conducted functional and regression testing, reported and verified bugs, implemented interactive gameplay mechanics, minigame systems, race mechanics, chapter content, and gameplay feature integration.</p>
+              <div class="project-actions">
+                <a href="https://store.steampowered.com/" target="_blank" rel="noreferrer">View Project</a>
+                <a href="https://www.youtube.com/" target="_blank" rel="noreferrer">Gameplay Video</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-cover xanthous">Xanthous VR</div>
+            <div class="project-body">
+              <span class="project-role">Final Project — Unreal Engine 4</span>
+              <h3>Xanthous VR</h3>
+              <p>Designed and implemented Unreal Engine Blueprint visual scripting for a horror VR game. Built smooth VR locomotion, interactive gameplay mechanics, and Blueprint-based gameplay architecture.</p>
+              <div class="project-actions">
+                <a href="https://github.com/hepiapril021" target="_blank" rel="noreferrer">View GitHub</a>
+                <a href="https://www.youtube.com/" target="_blank" rel="noreferrer">Demo Video</a>
               </div>
             </div>
           </article>
@@ -136,44 +200,96 @@
       </div>
     </section>
 
-    <section id="experience" class="section">
+    <section id="experience" class="section-space">
       <div class="container">
         <p class="section-label">Experience</p>
         <h2>Work Experience</h2>
+
         <div class="timeline">
-          <div class="timeline-item">
-            <h3>Gameplay Programmer</h3>
-            <p class="role">Game Studio / Professional Project</p>
-            <p>Developed gameplay mechanics, NPC systems, UI, checkpoints, cutscene integration, debugging, and gameplay feature support using Unreal Engine 4.</p>
-          </div>
-          <div class="timeline-item">
-            <h3>QA Engineer</h3>
-            <p class="role">Game Development Testing</p>
-            <p>Performed gameplay testing, bug reporting, regression testing, feature validation, and collaboration with programmers and designers.</p>
-          </div>
+          <article class="timeline-item reveal">
+            <div class="timeline-date">Apr 2024 — May 2026</div>
+            <div class="timeline-content">
+              <h3>Gameplay Programmer & QA Engineer</h3>
+              <p class="company">Xelo Games</p>
+              <ul>
+                <li>Contributed to multiple Unreal Engine 4 game projects.</li>
+                <li>Developed gameplay mechanics using Unreal Engine Blueprint.</li>
+                <li>Designed and implemented NPC AI systems.</li>
+                <li>Performed bug tracking and regression testing.</li>
+                <li>Collaborated with designers, artists, and programmers.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal delay-1">
+            <div class="timeline-date">Jan 2023 — Jun 2023</div>
+            <div class="timeline-content">
+              <h3>Game Reviewer & Esports Player Intern</h3>
+              <p class="company">Dominatus</p>
+              <ul>
+                <li>Analyzed gameplay mechanics and user experience.</li>
+                <li>Produced game reviews and gameplay evaluations.</li>
+                <li>Participated in competitive FPS esports tournaments, especially Valorant.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal delay-2">
+            <div class="timeline-date">2019 — 2020</div>
+            <div class="timeline-content">
+              <h3>Computer Technician Intern</h3>
+              <p class="company">Dunia Komputer</p>
+              <ul>
+                <li>Installed operating systems and software.</li>
+                <li>Troubleshot software-related issues.</li>
+                <li>Assembled and repaired desktop computers and laptops.</li>
+              </ul>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section contact">
-      <div class="container contact-grid">
-        <div>
-          <h2>Let's Work Together</h2>
-          <p>I'm open to gameplay programming opportunities and exciting game projects.</p>
+    <section id="education" class="section-space education-section">
+      <div class="container">
+        <p class="section-label">Education</p>
+        <h2>Education</h2>
+        <div class="education-grid">
+          <article class="mini-card reveal">
+            <h3>Politeknik Elektronika Negeri Surabaya (PENS)</h3>
+            <p>Game Technology</p>
+            <span>2020 — 2024</span>
+          </article>
+          <article class="mini-card reveal delay-1">
+            <h3>SMK Negeri 16 Samarinda</h3>
+            <p>Computer and Network Engineering</p>
+            <span>2017 — 2020</span>
+          </article>
         </div>
-        <div class="contact-links">
-          <a href="mailto:happyaprilazio21@gmail.com">happyaprilazio21@gmail.com</a>
-          <a href="https://www.linkedin.com/" target="_blank">LinkedIn Profile</a>
-          <a href="https://github.com/hepiapril021" target="_blank">GitHub Profile</a>
+      </div>
+    </section>
+
+    <section id="contact" class="section-space contact-section">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <p class="section-label">Contact</p>
+          <h2>Let's Work Together</h2>
+          <p>I am open to gameplay programming, QA, Unreal Engine, and game development opportunities.</p>
+        </div>
+        <div class="contact-links reveal delay-1">
+          <a href="mailto:hepiaprilazio@gmail.com">✉ hepiaprilazio@gmail.com</a>
+          <a href="https://www.linkedin.com/in/happy-aprilazio-kiperanza-716439214/" target="_blank" rel="noreferrer">in LinkedIn Profile</a>
+          <a href="https://github.com/hepiapril021" target="_blank" rel="noreferrer">GH GitHub Profile</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <p>© 2026 Happy Aprilazio. All rights reserved.</p>
+  <footer class="footer">
+    <p>© 2026 Happy Aprilazio Kiperanza. All rights reserved.</p>
   </footer>
 
+  <a href="#home" class="back-to-top" aria-label="Back to top">↑</a>
   <script src="script.js"></script>
 </body>
 </html>
