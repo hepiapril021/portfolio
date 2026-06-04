@@ -137,3 +137,12 @@
 {
     font-size:14px;
 }
+
+.contact-icon i {
+    font-size: 24px;
+    color: #4f7cff;
+}
+
+.contact-item:hover .contact-icon i {
+    color: #ffffff;
+}
