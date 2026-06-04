@@ -1,16 +1,10 @@
-const navToggle = document.querySelector('.nav-toggle');
-const navMenu = document.querySelector('.nav-menu');
-const navLinks = document.querySelectorAll('.nav-menu a');
-const year = document.querySelector('#year');
+const menuBtn = document.getElementById('menuBtn');
+const navLinks = document.getElementById('navLinks');
 
-year.textContent = new Date().getFullYear();
-
-navToggle.addEventListener('click', () => {
-  navMenu.classList.toggle('active');
+menuBtn.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
 });
 
-navLinks.forEach((link) => {
-  link.addEventListener('click', () => {
-    navMenu.classList.remove('active');
-  });
+navLinks.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => navLinks.classList.remove('active'));
 });

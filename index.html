@@ -3,25 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Happy Aprilazio Kiperanza | Gameplay Programmer</title>
-  <meta name="description" content="Portfolio website of Happy Aprilazio Kiperanza, Gameplay Programmer and QA Engineer specializing in Unreal Engine, Blueprint, C++, and gameplay systems." />
+  <title>Happy Aprilazio | Gameplay Programmer</title>
+  <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <nav class="navbar container">
-      <a href="#home" class="logo">Happy<span>.</span></a>
-      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
-      <ul class="nav-menu">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+  <header class="header">
+    <nav class="nav container">
+      <a href="#home" class="logo"><span>HA</span> Happy Aprilazio</a>
+      <button class="menu-btn" id="menuBtn">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+        <a href="assets/CV_Happy_Aprilazio.pdf" class="btn btn-small" download>Download CV</a>
+      </div>
     </nav>
   </header>
 
@@ -29,139 +30,105 @@
     <section id="home" class="hero section">
       <div class="container hero-grid">
         <div class="hero-content">
-          <p class="eyebrow">Gameplay Programmer · QA Engineer</p>
-          <h1>Building clean gameplay systems with Unreal Engine, Blueprint, and C++.</h1>
-          <p class="hero-description">
-            I am a Game Technology graduate with professional experience in gameplay programming,
-            NPC AI, UI implementation, debugging, feature integration, and QA testing.
-          </p>
+          <p class="badge">&lt;/&gt; Gameplay Programmer</p>
+          <h1>Happy <span>Aprilazio</span></h1>
+          <h2>Gameplay Programmer specializing in Unreal Engine 4 with Blueprint & C++.</h2>
+          <p class="hero-text">I build gameplay systems, player mechanics, AI behavior, UI features, and polished game experiences for released and in-development games.</p>
+          <div class="socials">
+            <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn">in</a>
+            <a href="https://github.com/hepiapril021" target="_blank" aria-label="GitHub">GH</a>
+            <a href="https://www.youtube.com/" target="_blank" aria-label="YouTube">YT</a>
+            <a href="mailto:happyaprilazio21@gmail.com" aria-label="Email">✉</a>
+          </div>
           <div class="hero-actions">
-            <a href="#projects" class="btn btn-primary">View Projects</a>
-            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            <a href="#projects" class="btn">View My Projects →</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
           </div>
         </div>
-        <div class="hero-card">
-          <div class="profile-placeholder">HA</div>
-          <h2>Happy Aprilazio Kiperanza</h2>
-          <p>Gameplay Programmer</p>
-          <div class="quick-info">
-            <span>Unreal Engine 4</span>
-            <span>Blueprint</span>
-            <span>C++</span>
-            <span>QA Testing</span>
-          </div>
+
+        <div class="profile-card">
+          <img src="assets/profile.jpg" alt="Happy Aprilazio profile photo">
+          <div class="status"><span></span> Available for work</div>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section">
-      <div class="container split-section">
+    <section id="about" class="section about">
+      <div class="container about-grid">
         <div>
           <p class="section-label">About Me</p>
-          <h2>I focus on gameplay logic, debugging, and systems that are easy to maintain.</h2>
+          <h2>Who I Am</h2>
+          <p>I'm a Gameplay Programmer with experience working on games using Unreal Engine 4. I focus on gameplay mechanics, Blueprint architecture, C++ implementation, AI behavior, UI systems, debugging, and feature integration.</p>
+          <p>I enjoy turning design ideas into playable systems that are easy to maintain, test, and expand by the team.</p>
         </div>
-        <div class="section-text">
-          <p>
-            Bachelor of Applied Computer Science graduate in Game Technology from the Electronic Engineering Polytechnic Institute of Surabaya. I have nearly 2 years of professional experience as a Gameplay Programmer and QA Engineer in game development.
-          </p>
-          <p>
-            My work includes NPC AI systems, checkpoint systems, bomb/throw mechanics, UI gameplay implementation, Wwise audio event integration, cutscene integration, debugging, bug reporting, and regression testing.
-          </p>
+        <div class="info-list">
+          <div><strong>Name</strong><span>Happy Aprilazio</span></div>
+          <div><strong>Location</strong><span>Indonesia</span></div>
+          <div><strong>Email</strong><span>happyaprilazio21@gmail.com</span></div>
+          <div><strong>Focus</strong><span>Unreal Engine 4 • Blueprint • C++</span></div>
         </div>
       </div>
     </section>
 
-    <section id="skills" class="section section-alt">
+    <section id="skills" class="section">
       <div class="container">
         <p class="section-label">Skills</p>
-        <h2>Technical Stack</h2>
+        <h2>My Technical Skills</h2>
         <div class="skills-grid">
-          <div class="skill-card">
-            <h3>Game Engine</h3>
-            <p>Unreal Engine 4, Blueprint Visual Scripting, Gameplay Framework</p>
-          </div>
-          <div class="skill-card">
-            <h3>Programming</h3>
-            <p>C++, C#, Lua, HTML, CSS, JavaScript</p>
-          </div>
-          <div class="skill-card">
-            <h3>Gameplay Systems</h3>
-            <p>NPC AI, checkpoint systems, inventory, interaction, throwable mechanics</p>
-          </div>
-          <div class="skill-card">
-            <h3>Audio & Tools</h3>
-            <p>Wwise integration, GitHub, Trello, Notion, Confluence</p>
-          </div>
-          <div class="skill-card">
-            <h3>QA</h3>
-            <p>Bug reporting, test cases, regression testing, gameplay validation</p>
-          </div>
-          <div class="skill-card">
-            <h3>Architecture Mindset</h3>
-            <p>Component-based systems, interfaces, event dispatchers, low coupling</p>
-          </div>
+          <div class="skill-card"><h3>Unreal Engine 4</h3><p>Blueprint / C++</p></div>
+          <div class="skill-card"><h3>Blueprint</h3><p>Gameplay Systems</p></div>
+          <div class="skill-card"><h3>C++</h3><p>Gameplay Programming</p></div>
+          <div class="skill-card"><h3>Wwise</h3><p>Audio Integration</p></div>
+          <div class="skill-card"><h3>GitHub</h3><p>Version Control</p></div>
+          <div class="skill-card"><h3>QA Testing</h3><p>Bug Reports / Regression</p></div>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="section">
+    <section id="projects" class="section projects">
       <div class="container">
-        <p class="section-label">Projects</p>
-        <h2>Selected Work</h2>
+        <div class="section-head">
+          <div>
+            <p class="section-label">Projects</p>
+            <h2>Featured Projects</h2>
+          </div>
+        </div>
         <div class="projects-grid">
           <article class="project-card">
-            <div class="project-image">Mice Crisis</div>
-            <div class="project-content">
+            <div class="project-image placeholder">MICE CRISIS</div>
+            <div class="project-body">
               <h3>Mice Crisis</h3>
-              <p class="project-role">Gameplay Programmer</p>
-              <p>
-                Worked on gameplay features including NPC setup, checkpoint controller, bomb mechanics, door systems, cutscene integration, and level gameplay flow.
-              </p>
-              <ul>
-                <li>Implemented and debugged gameplay systems using UE4 Blueprint and C++.</li>
-                <li>Integrated audio events using Wwise.</li>
-                <li>Supported feature testing and bug fixing for build stability.</li>
-              </ul>
-              <div class="tags">
-                <span>UE4</span><span>Blueprint</span><span>C++</span><span>Wwise</span>
+              <p class="role">Gameplay Programmer</p>
+              <p>Developed gameplay systems, player mechanics, UI features, NPC behavior, checkpoints, and feature integration using UE4 Blueprint & C++.</p>
+              <div class="project-links">
+                <a href="https://store.steampowered.com/" target="_blank">View on Steam</a>
+                <a href="https://www.youtube.com/" target="_blank">Gameplay Video</a>
               </div>
             </div>
           </article>
 
           <article class="project-card">
-            <div class="project-image">Chill Fox</div>
-            <div class="project-content">
+            <div class="project-image placeholder chill">CHILL FOX</div>
+            <div class="project-body">
               <h3>Chill Fox</h3>
-              <p class="project-role">QA Engineer / Game Tester</p>
-              <p>
-                Tested gameplay flow, identified bugs, documented issues, and supported regression testing to improve player experience and build quality.
-              </p>
-              <ul>
-                <li>Created clear bug reports with reproduction steps.</li>
-                <li>Validated fixes and tested gameplay scenarios.</li>
-                <li>Collaborated with developers and designers.</li>
-              </ul>
-              <div class="tags">
-                <span>QA</span><span>Testing</span><span>Bug Report</span><span>Regression</span>
+              <p class="role">Gameplay Programmer</p>
+              <p>Worked on gameplay systems, level mechanics, UI implementation, bug fixing, and optimization for PC platform.</p>
+              <div class="project-links">
+                <a href="https://store.steampowered.com/" target="_blank">View on Steam</a>
+                <a href="https://www.youtube.com/" target="_blank">Gameplay Video</a>
               </div>
             </div>
           </article>
 
           <article class="project-card">
-            <div class="project-image">Gameplay System</div>
-            <div class="project-content">
-              <h3>Throwable Bomb System</h3>
-              <p class="project-role">Gameplay Feature</p>
-              <p>
-                Designed a throwable object flow using inventory pickup, spawn logic, attach-to-socket, throw direction, physics handling, and collision checks.
-              </p>
-              <ul>
-                <li>Pickup object into inventory and destroy world actor.</li>
-                <li>Spawn object from inventory and attach to character socket.</li>
-                <li>Throw object using controlled forward direction and physics impulse.</li>
-              </ul>
-              <div class="tags">
-                <span>Inventory</span><span>Physics</span><span>Line Trace</span><span>Blueprint</span>
+            <div class="project-image placeholder personal">PERSONAL PROJECT</div>
+            <div class="project-body">
+              <h3>Personal Project</h3>
+              <p class="role">Indie Developer</p>
+              <p>A short game prototype built in Unreal Engine to experiment with mechanics, interaction systems, and gameplay ideas.</p>
+              <div class="project-links">
+                <a href="https://github.com/hepiapril021" target="_blank">View on GitHub</a>
+                <a href="https://www.youtube.com/" target="_blank">Gameplay Video</a>
               </div>
             </div>
           </article>
@@ -169,53 +136,42 @@
       </div>
     </section>
 
-    <section id="experience" class="section section-alt">
+    <section id="experience" class="section">
       <div class="container">
         <p class="section-label">Experience</p>
-        <h2>Professional Background</h2>
+        <h2>Work Experience</h2>
         <div class="timeline">
           <div class="timeline-item">
-            <span class="timeline-date">Game Development</span>
-            <h3>Gameplay Programmer & QA Engineer</h3>
-            <p>
-              Developed gameplay features, integrated systems, debugged issues, tested builds, reported bugs, and collaborated with multidisciplinary teams using GitHub, Trello, Notion, and Confluence.
-            </p>
+            <h3>Gameplay Programmer</h3>
+            <p class="role">Game Studio / Professional Project</p>
+            <p>Developed gameplay mechanics, NPC systems, UI, checkpoints, cutscene integration, debugging, and gameplay feature support using Unreal Engine 4.</p>
           </div>
           <div class="timeline-item">
-            <span class="timeline-date">Education</span>
-            <h3>Electronic Engineering Polytechnic Institute of Surabaya</h3>
-            <p>Bachelor of Applied Computer Science in Game Technology · GPA 3.70/4.00</p>
-          </div>
-          <div class="timeline-item">
-            <span class="timeline-date">Education</span>
-            <h3>SMK Negeri 16 Samarinda</h3>
-            <p>Vocational background before specializing in game technology and software development.</p>
+            <h3>QA Engineer</h3>
+            <p class="role">Game Development Testing</p>
+            <p>Performed gameplay testing, bug reporting, regression testing, feature validation, and collaboration with programmers and designers.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section contact-section">
-      <div class="container contact-card">
-        <p class="section-label">Contact</p>
-        <h2>Interested in working together?</h2>
-        <p>
-          I am open to gameplay programmer, Unreal Engine developer, and QA/game tester opportunities.
-        </p>
+    <section id="contact" class="section contact">
+      <div class="container contact-grid">
+        <div>
+          <h2>Let's Work Together</h2>
+          <p>I'm open to gameplay programming opportunities and exciting game projects.</p>
+        </div>
         <div class="contact-links">
-          <a href="mailto:hepiapril021@gmail.com" class="btn btn-primary">Email Me</a>
-          <a href="https://github.com/hepiapril021" target="_blank" rel="noopener" class="btn btn-secondary">GitHub</a>
-          <a href="https://www.linkedin.com/" target="_blank" rel="noopener" class="btn btn-secondary">LinkedIn</a>
+          <a href="mailto:happyaprilazio21@gmail.com">happyaprilazio21@gmail.com</a>
+          <a href="https://www.linkedin.com/" target="_blank">LinkedIn Profile</a>
+          <a href="https://github.com/hepiapril021" target="_blank">GitHub Profile</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer-content">
-      <p>© <span id="year"></span> Happy Aprilazio Kiperanza. All rights reserved.</p>
-      <a href="#home">Back to top</a>
-    </div>
+  <footer>
+    <p>© 2026 Happy Aprilazio. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
