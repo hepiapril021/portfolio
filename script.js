@@ -1,43 +1,27 @@
 const navToggle = document.querySelector('.nav-toggle');
 const navMenu = document.querySelector('.nav-menu');
-const navLinks = document.querySelectorAll('.nav-menu a');
 
-navToggle.addEventListener('click', () => {
-  const isOpen = navMenu.classList.toggle('open');
+navToggle?.addEventListener('click', () => {
+  const isOpen = navMenu.classList.toggle('active');
+  navToggle.classList.toggle('active', isOpen);
   navToggle.setAttribute('aria-expanded', String(isOpen));
 });
 
-navLinks.forEach((link) => {
+document.querySelectorAll('.nav-menu a').forEach((link) => {
   link.addEventListener('click', () => {
-    navMenu.classList.remove('open');
+    navMenu.classList.remove('active');
+    navToggle.classList.remove('active');
     navToggle.setAttribute('aria-expanded', 'false');
   });
 });
 
-const sections = document.querySelectorAll('section[id]');
-const observerOptions = { root: null, threshold: 0.22 };
-
-const sectionObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      const id = entry.target.getAttribute('id');
-      navLinks.forEach((link) => {
-        link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
-      });
-    }
-  });
-}, observerOptions);
-
-sections.forEach((section) => sectionObserver.observe(section));
-
-const reveals = document.querySelectorAll('.reveal');
-const revealObserver = new IntersectionObserver((entries) => {
+const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add('visible');
-      revealObserver.unobserve(entry.target);
+      observer.unobserve(entry.target);
     }
   });
 }, { threshold: 0.12 });
 
-reveals.forEach((item) => revealObserver.observe(item));
+document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
