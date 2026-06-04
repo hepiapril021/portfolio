@@ -85,3 +85,17 @@
         grid-template-columns:1fr;
     }
 }
+
+.back-to-top {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  font: inherit;
+  transition: color .3s ease, transform .3s ease;
+}
+
+.back-to-top:hover {
+  color: #4f7cff;
+  transform: translateY(-3px);
+}
