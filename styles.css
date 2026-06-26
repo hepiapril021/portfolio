@@ -371,18 +371,6 @@ img {
   margin-bottom: 22px;
 }
 
-.section-description
-{
-    margin-top:18px;
-    max-width:760px;
-
-    color:var(--muted);
-
-    font-size:17px;
-
-    line-height:1.8;
-}
-
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
