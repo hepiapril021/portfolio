@@ -5,15 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Portfolio website of Happy Aprilazio Kiperanza, Gameplay Programmer, QA Engineer, and Unreal Engine Developer." />
   <title>Happy Aprilazio Kiperanza | Gameplay Programmer</title>
- <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
-  <link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -140,12 +132,73 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
           <div>
             <p class="section-label">Projects</p>
             <h2>Featured Projects</h2>
+            <p class="section-desc">Selected Unreal Engine projects, including released studio work and an active solo horror project.</p>
+          </div>
+        </div>
+
+        <article class="project-card project-card-featured reveal">
+          <div class="project-thumb text-thumb ongoing-thumb">
+            <span>Echoes Beyond The Trail</span>
+          </div>
+          <div class="project-body">
+            <div class="project-title-row">
+              <h3>Echoes Beyond The Trail</h3>
+              <span class="status-pill">In Development</span>
+            </div>
+            <p class="role">Solo Developer / Gameplay Programmer — Unreal Engine 4.27</p>
+            <p>
+              A first-person psychological horror game focused on exploration, environmental storytelling, readable notes,
+              objective progression, sanity pressure, flashlight usage, and modular gameplay systems built with Blueprint and C++.
+            </p>
+
+            <div class="project-meta-grid">
+              <div>
+                <h4>Core Systems</h4>
+                <ul>
+                  <li>Interaction Component</li>
+                  <li>Inventory Component</li>
+                  <li>Objective Component</li>
+                  <li>Journal / Readable Notes</li>
+                  <li>Flashlight & Stamina</li>
+                  <li>Sanity / Horror Events</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Architecture Focus</h4>
+                <ul>
+                  <li>Component-Based Architecture</li>
+                  <li>Blueprint Interfaces</li>
+                  <li>Event-Driven UI Updates</li>
+                  <li>Data-Driven Objectives</li>
+                  <li>Loose Coupling, No Hard References</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="progress-list" aria-label="Development progress">
+              <div class="progress-row"><span>Core Gameplay</span><div class="progress-bar"><i style="width: 80%"></i></div><strong>80%</strong></div>
+              <div class="progress-row"><span>Interaction System</span><div class="progress-bar"><i style="width: 90%"></i></div><strong>90%</strong></div>
+              <div class="progress-row"><span>Objective / Journal</span><div class="progress-bar"><i style="width: 75%"></i></div><strong>75%</strong></div>
+              <div class="progress-row"><span>Environment</span><div class="progress-bar"><i style="width: 45%"></i></div><strong>45%</strong></div>
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com/hepiapril021/HorrorProjects" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i>View Repository</a>
+              <a href="#contact"><i class="fas fa-arrow-right"></i>Ask for Details</a>
+            </div>
+          </div>
+        </article>
+
+        <div class="section-head project-subhead reveal">
+          <div>
+            <p class="section-label">Released / Studio Work</p>
+            <h2>Professional Projects</h2>
           </div>
         </div>
 
         <div class="project-grid">
           <article class="project-card reveal">
-            <a class="project-thumb" href="https://store.steampowered.com/app/4181830/Mice_Crisis/" target="_blank" rel="noopener noreferrer">
+            <a class="project-thumb project-image" href="https://store.steampowered.com/app/4181830/Mice_Crisis/" target="_blank" rel="noopener noreferrer">
               <img src="assets/projects/mice-crisis.jpg" alt="Mice Crisis Steam capsule artwork" />
             </a>
             <div class="project-body">
@@ -153,19 +206,14 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
               <p class="role">Gameplay Programmer — Unreal Engine 4</p>
               <p>Developed NPC AI, checkpoint controller, door mechanics, bomb mechanics, settings UI, coin collection, level transitions, ragdoll functionality, outline material, and interactive objects.</p>
               <div class="project-links">
-               <a href="https://store.steampowered.com/app/4181830/Mice_Crisis/"target="_blank"rel="noopener noreferrer"><i class="fab fa-steam"></i>View on Steam</a>
-                <a href="#contact">
-
-<i class="fas fa-arrow-right"></i>
-Project Details
-
-</a>
+                <a href="https://store.steampowered.com/app/4181830/Mice_Crisis/" target="_blank" rel="noopener noreferrer"><i class="fab fa-steam"></i>View on Steam</a>
+                <a href="#contact"><i class="fas fa-arrow-right"></i>Project Details</a>
               </div>
             </div>
           </article>
 
           <article class="project-card reveal">
-            <a class="project-thumb" href="https://store.steampowered.com/app/3905590/Chill_Fox/" target="_blank" rel="noopener noreferrer">
+            <a class="project-thumb project-image" href="https://store.steampowered.com/app/3905590/Chill_Fox/" target="_blank" rel="noopener noreferrer">
               <img src="assets/projects/chill-fox.jpg" alt="Chill Fox Steam capsule artwork" />
             </a>
             <div class="project-body">
@@ -173,19 +221,14 @@ Project Details
               <p class="role">Gameplay Programmer — Unreal Engine 4</p>
               <p>Worked on NPC AI, object dragging, sneak attack, object throwing with explosion effects, HUD UI, cutscenes, AI wandering, chase behavior, and gameplay animation integration.</p>
               <div class="project-links">
-                <a href="https://store.steampowered.com/app/3905590/Chill_Fox/" target="_blank" rel="noopener noreferrer"><i class="fab fa-steam"></i>View on Steam
-                <a href="#contact">
-
-<i class="fas fa-arrow-right"></i>
-Project Details
-
-</a>
+                <a href="https://store.steampowered.com/app/3905590/Chill_Fox/" target="_blank" rel="noopener noreferrer"><i class="fab fa-steam"></i>View on Steam</a>
+                <a href="#contact"><i class="fas fa-arrow-right"></i>Project Details</a>
               </div>
             </div>
           </article>
 
           <article class="project-card reveal">
-            <a class="project-thumb" href="https://store.steampowered.com/app/1744970/Petit_Island/" target="_blank" rel="noopener noreferrer">
+            <a class="project-thumb project-image" href="https://store.steampowered.com/app/1744970/Petit_Island/" target="_blank" rel="noopener noreferrer">
               <img src="assets/projects/petit-island.jpg" alt="Petit Island Steam capsule artwork" />
             </a>
             <div class="project-body">
@@ -193,13 +236,8 @@ Project Details
               <p class="role">QA Engineer & Gameplay Programmer — Unreal Engine 4</p>
               <p>Conducted functional and regression testing, reported and verified bugs, implemented interactive mechanics, integrated chapter content, and fixed gameplay-related issues.</p>
               <div class="project-links">
-                <a href="https://store.steampowered.com/app/1744970/Petit_Island/" target="_blank" rel="noopener noreferrer"><i class="fab fa-steam"></i>View on Steam
-               <a href="#contact">
-
-<i class="fas fa-arrow-right"></i>
-Project Details
-
-</a>
+                <a href="https://store.steampowered.com/app/1744970/Petit_Island/" target="_blank" rel="noopener noreferrer"><i class="fab fa-steam"></i>View on Steam</a>
+                <a href="#contact"><i class="fas fa-arrow-right"></i>Project Details</a>
               </div>
             </div>
           </article>
@@ -210,12 +248,7 @@ Project Details
               <h3>Lily & Violet</h3>
               <p class="role">Gameplay Programmer — Unreal Engine 4</p>
               <p>Supported minigame systems, race gameplay mechanics, chapter integration, and gameplay bug fixing.</p>
-              <div class="project-links"><a href="#contact">
-
-<i class="fas fa-arrow-right"></i>
-Project Details
-
-</a></div>
+              <div class="project-links"><a href="#contact"><i class="fas fa-arrow-right"></i>Project Details</a></div>
             </div>
           </article>
 
@@ -225,12 +258,7 @@ Project Details
               <h3>Xanthous VR</h3>
               <p class="role">Gameplay Programmer — Unreal Engine 4</p>
               <p>Final project focused on Blueprint visual scripting for a VR horror game, with smooth VR locomotion and interactive gameplay mechanics.</p>
-              <div class="project-links"><a href="#contact">
-
-<i class="fas fa-arrow-right"></i>
-Project Details
-
-</a></div>
+              <div class="project-links"><a href="#contact"><i class="fas fa-arrow-right"></i>Project Details</a></div>
             </div>
           </article>
         </div>
